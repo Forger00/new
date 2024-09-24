@@ -1,0 +1,79 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #343a40;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar-brand:hover {
+    color: #ccc;
+    opacity: 8s;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #adb5bd;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffc107;
+}
+
+.navbar-nav .nav-link.disabled {
+    color: #6c757d;
+}
+
+/* Navbar toggle button styling */
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='white' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.5 12a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5zM1.5 8a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5zM1.5 4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5z'/%3e%3c/svg%3e");
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Make the navbar sticky at the top */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        margin-right: 0;
+        padding: 10px 0;
+    }
+}
